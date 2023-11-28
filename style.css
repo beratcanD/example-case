@@ -1,5 +1,5 @@
 body {
-
+    
     overflow-x: hidden;
     line-height: inherit;
     margin: 0;
@@ -149,7 +149,9 @@ body {
 
 
 .hero__logo {
-
+    position: absolute;
+    right: 0;
+    overflow: hidden;
     stroke-dasharray: 4000;
     stroke-dashoffset: 4000;
     animation: hero-logo-draw 3s linear forwards;
@@ -159,6 +161,8 @@ body {
 
 
 }
+
+
 
 
 .hero__btn {
@@ -221,9 +225,21 @@ body {
 }
 
 .logo__list__content {
-    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+   
     padding-bottom: 2.25rem;
     padding-top: 2.25rem;
+    animation: move-rtl 6000ms linear infinite;
+}
+
+@keyframes move-rtl{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
 }
 
 .logo__list__content img {
@@ -421,9 +437,7 @@ body {
   margin: auto;
 }
 
-.comments__container{
-  
-}
+
 .comments {
     padding: 4rem;
     font-size: 28px;
@@ -652,6 +666,7 @@ body {
     padding-top: 8rem;
     padding-bottom: 8rem;
     padding-left: 4rem;
+    overflow: hidden;
 }
 
 .right__content .title{
@@ -684,4 +699,424 @@ body {
 
 .mail__input {
     all: unset;
+}
+
+@media (max-width: 576px) {
+
+    .hero{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    .hero__logo{
+        display: none;
+    }
+    .container{
+    
+        padding-left: 1.15rem;
+        padding-right: 1.15rem;
+    }
+    .hero__head__desc__container{
+        width: 100%;
+        padding: 0;
+    }
+    .hero__head{
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 400;
+    }
+    .hero__desc{
+        font-size: 22px;
+        line-height: 36px;
+        font-weight: 400;
+        margin-top: 12px;
+    }
+
+    .logo__list__container{
+
+        flex-direction: column;
+    }
+
+    .info__parag p:first-child{
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+
+    }
+    .info__parag p:last-child{
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+
+    }
+    .info__content{
+        padding: 16px;
+        
+        
+    }
+    .info__and__img__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .info__and__img__container img{
+        
+       
+    }
+    .info__parag{
+        max-width: 544px;
+        padding: 24px;
+        margin-left: 24px;
+        margin-top: 0;
+    }
+
+    .what__we__do__content{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .comments p{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        line-height: 32px;  
+    }
+
+    .list__desc{
+  
+    }
+    .nav__list{
+        display: none;
+    }
+    .sevices__title{
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 400;
+
+    }
+    .services__subtitle{
+        font-size: 18px;
+        line-height: 28px;
+
+    }
+    
+    .title__subtitle{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .services__desc{
+        width: 100%;
+        margin-left:1rem ;
+        margin-right: 1rem;
+    }
+
+   .services__desc__item{
+    padding: 40px;
+    font-size: 18px;
+    line-height: 28px;
+   }
+
+   .git__head{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+   }
+
+   .footer__content{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .left__content{
+    width: 100%;
+    border-right: none;
+    border-bottom: 1.5px solid;
+    padding-left: 1rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+   }
+
+   .right__content{
+    padding-left: 1rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    padding-right: 1rem;
+   }
+
+   .case__studies__slider{
+    display: flex;
+    flex-direction: column;
+   }
+  .h2{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+  .plus__case__buttons{
+    display: none;
+  }
+  .logo__list__content img:nth-child(n+4){
+    
+    
+  }
+  .logo__list__content{
+    
+    
+  }
+  
+  
+  
+  img, video{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .info__logo{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info__logo img{
+    width: 40%;
+    
+  }
+}
+
+@media (min-width:576px) {
+    
+    .hero{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    .hero__logo{
+        display: none;
+    }
+    .container{
+    
+        padding-left: 1.15rem;
+        padding-right: 1.15rem;
+    }
+    .hero__head__desc__container{
+        width: 100%;
+        padding: 0;
+    }
+    .hero__head{
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 400;
+    }
+    .hero__desc{
+        font-size: 22px;
+        line-height: 36px;
+        font-weight: 400;
+        margin-top: 12px;
+    }
+
+    .logo__list__container{
+
+        flex-direction: column;
+    }
+
+    .info__parag p:first-child{
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+
+    }
+    .info__parag p:last-child{
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+
+    }
+    .info__content{
+        padding: 16px;
+        
+        
+    }
+    .info__and__img__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .info__and__img__container img{
+        
+       
+    }
+    .info__parag{
+        max-width: 544px;
+        padding: 24px;
+        margin-left: 24px;
+        margin-top: 0;
+    }
+
+    .what__we__do__content{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .comments p{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        line-height: 32px;  
+    }
+
+    .list__desc{
+  
+    }
+    .nav__list{
+        display: none;
+    }
+    .sevices__title{
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 400;
+
+    }
+    .services__subtitle{
+        font-size: 18px;
+        line-height: 28px;
+
+    }
+    
+    .title__subtitle{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .services__desc{
+        width: 100%;
+        margin-left:1rem ;
+        margin-right: 1rem;
+    }
+
+   .services__desc__item{
+    padding: 40px;
+    font-size: 18px;
+    line-height: 28px;
+   }
+
+   .git__head{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+   }
+
+   .footer__content{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .left__content{
+    width: 100%;
+    border-right: none;
+    border-bottom: 1.5px solid;
+    padding-left: 1rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+   }
+
+   .right__content{
+    padding-left: 1rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    padding-right: 1rem;
+   }
+
+   .case__studies__slider{
+    display: flex;
+    flex-direction: column;
+   }
+  .h2{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+  .plus__case__buttons{
+    display: none;
+  }
+  
+  
+  
+  
+  
+  img, video{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .info__logo{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info__logo img{
+    width: 40%;
+    
+  }
+}
+
+@media (min-width:768px) {
+    .header{
+        padding-top: 2.25rem;
+        padding-bottom: 2.25rem;
+    }
+
+    .hero__content{
+        display: flex;
+        align-items: center;
+    }
+    
+    .hero__logo{
+        display: block;
+    
+    }
+
+    .hero__logo svg{
+        overflow-x: hidden;
+    }
+
+    .hero__head{
+        width: 50%;
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    .hero__desc{
+        width: 50%;
+        
+    }
+
+    .info__and__img__container{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .info__parag{
+        width: 50%;
+        margin-left: 0;
+        margin-top: 24px;
+    }
+
+    .info__parag p:first-child{
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .info__parag p:last-child{
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .case__studies__slider{
+        display: flex;
+        flex-direction: row;
+    }
 }
