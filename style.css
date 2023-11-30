@@ -1,5 +1,5 @@
 body {
-    
+    background-color: rgb(244, 240, 236);
     overflow-x: hidden;
     line-height: inherit;
     margin: 0;
@@ -227,7 +227,7 @@ body {
 .logo__list__content {
     display: flex;
     justify-content: flex-start;
-   
+    overflow: hidden;
     padding-bottom: 2.25rem;
     padding-top: 2.25rem;
     animation: move-rtl 6000ms linear infinite;
@@ -703,6 +703,18 @@ body {
 
 @media (max-width: 576px) {
 
+    .git{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .what__we__do{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .plus__case__content{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
     .hero{
         padding-top: 6rem;
         padding-bottom: 6rem;
@@ -735,7 +747,23 @@ body {
 
         flex-direction: column;
     }
-
+    .logo__list__content {
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: hidden;
+        padding-bottom: 2.25rem;
+        padding-top: 2.25rem;
+        animation: move-rtl 6000ms linear infinite;
+    }
+    
+    @keyframes move-rtl{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
     .info__parag p:first-child{
         font-size: 18px;
         line-height: 28px;
@@ -855,14 +883,23 @@ body {
   .plus__case__buttons{
     display: none;
   }
-  .logo__list__content img:nth-child(n+4){
-    
-    
-  }
-  .logo__list__content{
-    
-    
-  }
+  .logo__list__content {
+    display: flex;
+    justify-content: flex-start;
+   overflow-x: hidden;
+    padding-bottom: 2.25rem;
+    padding-top: 2.25rem;
+    animation: move-rtl 6000ms linear infinite;
+}
+
+@keyframes move-rtl{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
   
   
   
@@ -886,7 +923,22 @@ body {
 }
 
 @media (min-width:576px) {
-    
+    .git{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .lawrance{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .what__we__do{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .plus__case__content{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
     .hero{
         padding-top: 6rem;
         padding-bottom: 6rem;
@@ -1064,6 +1116,23 @@ body {
 }
 
 @media (min-width:768px) {
+
+    .git{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .lawrance{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .what__we__do{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .plus__case__content{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
     .header{
         padding-top: 2.25rem;
         padding-bottom: 2.25rem;
@@ -1118,5 +1187,188 @@ body {
     .case__studies__slider{
         display: flex;
         flex-direction: row;
+    }
+
+    .info{
+        margin-top:2.25rem;
+        margin-bottom: 2.25rem;
+    }
+    .logo__list__content {
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        padding-bottom: 2.25rem;
+        padding-top: 2.25rem;
+        animation: move-rtl 6000ms linear infinite;
+    }
+    
+    @keyframes move-rtl{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+}
+
+@media (min-width:992px){
+    .git{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .lawrance{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .what__we__do{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .plus__case__content{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .header{
+        padding-top: 2.25rem;
+        padding-bottom: 2.25rem;
+    }
+
+    .hero__content{
+        display: flex;
+        align-items: center;
+    }
+    
+    .hero__logo{
+        display: block;
+    
+    }
+
+    .hero__logo svg{
+        overflow-x: hidden;
+    }
+
+    .hero__head{
+        width: 50%;
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    .hero__desc{
+        width: 50%;
+        
+    }
+    .hero__head__desc__container{
+        max-width: 1200px;
+    }
+
+    .info__and__img__container{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .info__parag{
+        width: 50%;
+        margin-left: 0;
+        margin-top: 24px;
+    }
+
+    .info__parag p:first-child{
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .info__parag p:last-child{
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .case__studies__slider{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info{
+        margin-top:2.25rem;
+        margin-bottom: 1.25rem;
+    }
+    .logo__list__content {
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        padding-bottom: 2.25rem;
+        padding-top: 2.25rem;
+        animation: move-rtl 6000ms linear infinite;
+    }
+    
+    @keyframes move-rtl{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+}
+
+@media (min-width:1200px){
+    .hero__head__desc__container{
+        max-width: 1200px;
+    }
+
+    .info__parag{
+        max-width: 792px;
+        padding-top: 4rem;
+    }
+
+    .what__we__do__content {
+
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2.25rem;
+    }
+    .footer__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .left__content{
+        border-right: 1.5px solid;
+        width: 66.6666%;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    .right__content{
+        padding-top:8rem;
+        padding-bottom: 8rem;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media (min-width:1400px){
+    .container{
+        
+        padding-left: 1.15rem;
+        padding-right: 1.15rem;
+    }
+
+    .hero{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .info__parag{
+        padding: 4rem;
+        width: 100%;
+        margin-top: 4rem;
     }
 }
