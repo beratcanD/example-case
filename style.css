@@ -220,6 +220,7 @@ body {
 
 
 .logo__list__container {
+    background-color: white;
     display: flex;
     justify-content: center;
 }
@@ -230,17 +231,18 @@ body {
     overflow: hidden;
     padding-bottom: 2.25rem;
     padding-top: 2.25rem;
-    animation: move-rtl 6000ms linear infinite;
+    transform: none;
+    /* animation: move-rtl 6000ms linear infinite; */
 }
 
-@keyframes move-rtl{
+/* @keyframes move-rtl{
     0%{
         transform: translateX(0);
     }
     100%{
         transform: translateX(-100%);
     }
-}
+} */
 
 .logo__list__content img {
     margin-left: 40px;
@@ -744,7 +746,7 @@ body {
     }
 
     .logo__list__container{
-
+        background-color: white;
         flex-direction: column;
     }
     .logo__list__content {
@@ -753,17 +755,17 @@ body {
         overflow-x: hidden;
         padding-bottom: 2.25rem;
         padding-top: 2.25rem;
-        animation: move-rtl 6000ms linear infinite;
+        /* animation: move-rtl 6000ms linear infinite; */
     }
     
-    @keyframes move-rtl{
+   /*  @keyframes move-rtl{
         0%{
             transform: translateX(0);
         }
         100%{
             transform: translateX(-100%);
         }
-    }
+    } */
     .info__parag p:first-child{
         font-size: 18px;
         line-height: 28px;
@@ -889,17 +891,17 @@ body {
    overflow-x: hidden;
     padding-bottom: 2.25rem;
     padding-top: 2.25rem;
-    animation: move-rtl 6000ms linear infinite;
+    /* animation: move-rtl 6000ms linear infinite; */
 }
 
-@keyframes move-rtl{
+/* @keyframes move-rtl{
     0%{
         transform: translateX(0);
     }
     100%{
         transform: translateX(-100%);
     }
-}
+} */
   
   
   
@@ -1199,17 +1201,17 @@ body {
         overflow: hidden;
         padding-bottom: 2.25rem;
         padding-top: 2.25rem;
-        animation: move-rtl 6000ms linear infinite;
+        /* animation: move-rtl 6000ms linear infinite; */
     }
     
-    @keyframes move-rtl{
+/*     @keyframes move-rtl{
         0%{
             transform: translateX(0);
         }
         100%{
             transform: translateX(-100%);
         }
-    }
+    } */
 }
 
 @media (min-width:992px){
@@ -1298,17 +1300,17 @@ body {
         overflow: hidden;
         padding-bottom: 2.25rem;
         padding-top: 2.25rem;
-        animation: move-rtl 6000ms linear infinite;
+        /* animation: move-rtl 6000ms linear infinite; */
     }
     
-    @keyframes move-rtl{
+/*     @keyframes move-rtl{
         0%{
             transform: translateX(0);
         }
         100%{
             transform: translateX(-100%);
         }
-    }
+    } */
 }
 
 @media (min-width:1200px){
@@ -1370,5 +1372,12 @@ body {
         padding: 4rem;
         width: 100%;
         margin-top: 4rem;
+    }
+
+    .logo__list__content{
+        transform: 0;
+    }
+    #tns1{
+        width: 100%;
     }
 }

@@ -7,7 +7,10 @@
     <title>Nutima</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="/style.css">
+    
+    
 
 </head>
 
@@ -16,6 +19,7 @@
     <script>
         AOS.init();
     </script>
+   
     <header>
         <div class="header header__content">
             <a href="/">
@@ -115,14 +119,17 @@
     <section class="logo__list">
         <div class="logo__list__container">
             <div class="logo__list__content">
-                <img src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="100" loading="lazy" alt="">
-                <img src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="200" alt="" >
-                <img src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="300" alt="">
-                <img src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="400" alt="">
-                <img src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="500" alt="">
-                <img src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="600" alt="">
-                <img src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="700" alt="">
-                <img src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="800" alt="">
+                <img  class="slide" src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="100" loading="lazy" alt="">
+                <img class="slide" src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="200" alt="" >
+                <img class="slide" src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="300" alt="">
+                <img class="slide" src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="400" alt="">
+                <img class="slide" src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="500" alt="">
+                <img class="slide" src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="600" alt="">
+                <img class="slide" src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="700" alt="">
+                <img class="slide" src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="800" alt="">
+                <img class="slide" src="https://nutima.agency/img/logo-mavi.svg" data-aos="fade-up" data-aos-delay="500" alt="">
+            
+                
             </div>
         </div>
 
@@ -485,6 +492,51 @@
             </div>
         </div>
     </section>
+
+<!--     <script>
+  
+        const slides = document.querySelector(".logo__list__content");
+         
+        let isDragstart = false, prevPageX,prevScrollLeft;
+
+        const dragStart = (e) =>{
+            isDragstart = true;
+            prevPageX = e.pageX;
+            prevScrollLeft = slides.scrollLeft;
+        }
+
+        const dragging = (e) => {
+            if(!isDragstart) return;
+            e.preventDefault();
+            let positionDiff = e.pageX - prevPageX;
+            slides.scrollLeft = prevScrollLeft-positionDiff;
+        } 
+        const dragStop = () =>{
+            isDragstart = false;
+        }
+        
+        slides.addEventListener("mousedown",dragStart);
+        slides.addEventListener("mousemove",dragging);
+        slides.addEventListener("mousedown",dragging);
+
+</script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script type="module">
+    var slider = tns({
+        container: '.logo__list__content',
+    items: 8,
+    slideBy: 'page',
+    speed:500,
+    autoplay: true,
+    controls:false,
+    nav:false,
+    autoplayButtonOutput:false,    
+     
+     
+
+    })
+</script>
+
 </body>
 
 </html>
