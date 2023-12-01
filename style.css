@@ -1358,16 +1358,23 @@ body {
 
 @media (min-width:1400px){
     .container{
-        
-        padding-left: 1.15rem;
-        padding-right: 1.15rem;
+        max-width: 1536px;
+        padding-left: 2.25rem;
+        padding-right: 2.25rem;
+        margin-left:auto ;
+        margin-right: auto;
     }
 
     .hero{
         padding-top: 6rem;
         padding-bottom: 6rem;
     }
-
+    .hero__head__desc__container{
+        display: flex;
+      
+        flex-direction: column;
+        justify-content: center;
+    }
     .info__parag{
         padding: 4rem;
         width: 100%;
@@ -1375,9 +1382,13 @@ body {
     }
 
     .logo__list__content{
-        transform: 0;
+    
+        
+       
     }
-    #tns1{
-        width: 100%;
+    .hero__btn{
+        max-width: 200px;
     }
+
+    
 }
